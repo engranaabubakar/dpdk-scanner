@@ -32,12 +32,17 @@ sudo ./build/app/probe_generation --target-port=<port> --scan-addresses=<start_a
 `DPDk-based -l 0-7 -- -c /etc/dpdk/probe.yaml --queues 1 --portmask 0xff`
 `./rcv_handle -l 8-13 -n 1 -- -q 1 -p 0xff -s`
 
-usage
+### usage
 1 -p --portmask => port maske e.g. 0xFFFF).:
+
 2 -P --portmap => port map(in '(x, y),(b,z)'
+
 3 -q --queues => The amount of RX  per port (default value is 1).
+
 4 -x --promisc => promiscuous mode on all enabled ports.
+
 5 -s --stats =>  real-time packet counter stats
+
 6 -c --configuration config file path
 
 
