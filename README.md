@@ -28,9 +28,9 @@ sudo ./build/app/probe_generation --target-port=<port> --scan-addresses=<start_a
 - Replace `<port>` with the target port number to send the probe packets.
 - Replace `<start_address>` and `<end_address>` with the range of network addresses to be scanned.
 - Replace `<start_port>` and `<end_port>` with the range of port numbers to be scanned.
-- DPDk-based -l 0-7 -- -c /etc/dpdk/probe.yaml --queues 1 --portmask 0xff
 
-./rcv_handle -l 8-13 -n 1 -- -q 1 -p 0xff -s
+`DPDk-based -l 0-7 -- -c /etc/dpdk/probe.yaml --queues 1 --portmask 0xff`
+`./rcv_handle -l 8-13 -n 1 -- -q 1 -p 0xff -s`
 
 usage
 -p --portmask => port maske e.g. 0xFFFF).
